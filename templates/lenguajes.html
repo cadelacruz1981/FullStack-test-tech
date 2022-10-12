@@ -1,0 +1,34 @@
+{% extends './base.html' %}
+
+{% block title  %} lenguajes de programacion {% endblock  %}
+
+{% block body %}
+<div class="row">
+	<div class="col-md-6 offset-mdi-3">
+	<h1>lenguajes de programacion</h1>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>nombre</th>
+				</tr>
+
+			</thead>
+			<tbody>
+				{% for leng in lenguajes %}
+				<tr>
+					<td>1</td>
+					<td>{{leng}}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+	</div>
+
+	</div>
+</div>
+
+{% endblock %}
+~               
